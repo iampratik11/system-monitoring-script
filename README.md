@@ -17,7 +17,7 @@ A Bash shell script that monitors key system resources and alerts the user when 
 
 ## 🛠️ Technologies Used
 
-- Linux (Ubuntu)
+- Linux (fedora)
 - Bash Shell Scripting
 - Git
 - GitHub
@@ -46,7 +46,7 @@ A Bash shell script that monitors key system resources and alerts the user when 
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/system-monitoring-script.git
+git clone https://github.com/Pratikwagh99/system-monitoring-script.git
 ```
 
 Navigate to the project folder:
