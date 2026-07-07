@@ -1,28 +1,59 @@
-# System Monitoring Script
+# 🖥️ System Monitoring Script
 
-## Description
+A Bash shell script that monitors key system resources and alerts the user when predefined thresholds are exceeded. This project demonstrates basic Linux monitoring and operational automation commonly used by DevOps engineers.
 
-This project is a Bash shell script that monitors system resources such as disk usage, memory usage, and CPU-intensive processes. It alerts the user when predefined thresholds are exceeded.
+---
 
-## Features
+## 📌 Features
 
-- Monitor disk usage
-- Monitor memory usage
-- Display top CPU-consuming processes
-- Print warning messages
-- Log alerts to monitor.log
+- ✅ Monitor Disk Usage
+- ✅ Monitor Memory Usage
+- ✅ Display Top CPU-Consuming Processes
+- ✅ Generate Warning Alerts
+- ✅ Log Alerts to `monitor.log`
+- ✅ Easy to Configure Threshold Values
 
-## Requirements
+---
+
+## 🛠️ Technologies Used
+
+- Linux (Ubuntu)
+- Bash Shell Scripting
+- Git
+- GitHub
+
+---
+
+## 📋 Prerequisites
 
 - Linux Operating System
 - Bash Shell
+- Git
 
-## Thresholds
+---
 
-- Disk Usage Threshold: 80%
-- Memory Usage Threshold: 75%
+## ⚙️ Threshold Configuration
 
-## How to Run
+| Resource | Threshold |
+|----------|-----------|
+| Disk Usage | 80% |
+| Memory Usage | 75% |
+
+---
+
+## 🚀 How to Run
+
+Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/system-monitoring-script.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd system-monitoring-script
+```
 
 Give execute permission:
 
@@ -36,10 +67,13 @@ Run the script:
 ./system_monitor.sh
 ```
 
-## Sample Output
+---
 
+## 📊 Sample Output
+
+```text
 =====================================
-System Monitoring Report
+      System Monitoring Report
 =====================================
 
 Disk Usage: 45%
@@ -48,22 +82,82 @@ Disk usage is normal.
 Memory Usage: 62%
 Memory usage is normal.
 
-Top CPU-consuming processes
+Top CPU-Consuming Processes
 
-PID COMMAND %CPU
-1234 java 35.2
-4567 chrome 18.1
-7890 python 10.3
+PID     COMMAND     %CPU
+1234    java        35.2
+4567    chrome      18.1
+7890    python      10.3
+```
 
-## Log File
+---
 
-Alerts are stored in:
+## 📝 Log File
 
-monitor.log
+Whenever the disk or memory usage exceeds the configured threshold, an alert is appended to **monitor.log**.
 
-## Project Structure
+Example:
 
+```text
+Tue Jul 08 10:15:20 IST 2025: WARNING - Disk usage is 85%
+Tue Jul 08 10:15:20 IST 2025: WARNING - Memory usage is 78%
+```
+
+---
+
+## 📁 Project Structure
+
+```text
 system-monitoring-script/
+│
 ├── system_monitor.sh
 ├── monitor.log
 └── README.md
+```
+
+---
+
+## 📚 Linux Commands Used
+
+| Command | Purpose |
+|---------|---------|
+| `df` | Check disk usage |
+| `free` | Check memory usage |
+| `ps` | Display running processes |
+| `awk` | Process command output |
+| `sed` | Format text |
+| `echo` | Print messages |
+| `date` | Generate timestamps |
+
+---
+
+## 🔄 Git Commit History
+
+This project was developed using multiple meaningful Git commits, including:
+
+- Initial project setup
+- Add disk monitoring
+- Add memory monitoring
+- Add CPU monitoring
+- Add alert logging
+- Add project documentation
+
+---
+
+## 🎯 Learning Outcomes
+
+This project helped me learn:
+
+- Bash Shell Scripting
+- Linux System Monitoring
+- Process Management
+- Automation using Shell Scripts
+- Git Version Control
+- GitHub Repository Management
+- Technical Documentation
+
+---
+
+## 👨‍💻 Author
+
+**Pratik Wagh**
