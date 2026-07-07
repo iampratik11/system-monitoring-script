@@ -25,4 +25,11 @@ MEMORY_USAGE=$(free | awk '/Mem:/ {printf("%.0f"), $3/$2*100}')
 echo ""
 echo "Memory Usage: ${MEMORY_USAGE}%"
 
+MEMORY_THRESHOLD=75
 
+if [ "$MEMORY_USAGE" -ge "$MEMORY_THRESHOLD" ]
+then
+    echo "WARNING: Memory usage is high."
+else
+    echo "Memory usage is normal."
+fi
