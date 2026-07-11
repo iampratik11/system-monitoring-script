@@ -11,7 +11,7 @@ A Bash shell script that monitors key system resources and alerts the user when 
 - ✅ Display Top CPU-Consuming Processes
 - ✅ Generate Warning Alerts
 - ✅ Log Alerts to `monitor.log`
-- ✅ Easy to Configure Threshold Values
+
 
 ---
 
