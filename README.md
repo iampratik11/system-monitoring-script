@@ -17,7 +17,7 @@ A Bash shell script that monitors key system resources and alerts the user when 
 
 ## 🛠️ Technologies Used
 
-- Linux (fedora)
+- Linux (Fedora)
 - Bash Shell Scripting
 - Git
 - GitHub
